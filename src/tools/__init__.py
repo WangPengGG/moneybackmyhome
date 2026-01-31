@@ -22,6 +22,17 @@ from src.tools.portfolio import (
     remove_position,
     update_position,
 )
+from src.tools.risk_analysis import (
+    analyze_portfolio_risk,
+    calculate_portfolio_beta,
+    check_risk_alerts,
+    get_concentration_risk,
+    get_volatility_analysis,
+)
+from src.tools.calendar import (
+    get_earnings_calendar,
+    get_upcoming_macro_events,
+)
 
 # All tools available for agents
 ALL_TOOLS = [
@@ -44,6 +55,15 @@ ALL_TOOLS = [
     update_position,
     remove_position,
     get_portfolio_symbols,
+    # Risk analysis tools
+    analyze_portfolio_risk,
+    get_concentration_risk,
+    calculate_portfolio_beta,
+    get_volatility_analysis,
+    check_risk_alerts,
+    # Calendar tools
+    get_upcoming_macro_events,
+    get_earnings_calendar,
 ]
 
 __all__ = [
@@ -66,6 +86,15 @@ __all__ = [
     "update_position",
     "remove_position",
     "get_portfolio_symbols",
+    # Risk analysis
+    "analyze_portfolio_risk",
+    "get_concentration_risk",
+    "calculate_portfolio_beta",
+    "get_volatility_analysis",
+    "check_risk_alerts",
+    # Calendar
+    "get_upcoming_macro_events",
+    "get_earnings_calendar",
     # Collection
     "ALL_TOOLS",
 ]
